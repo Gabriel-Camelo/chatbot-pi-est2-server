@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\Sobre;
-use App\Models\About;
+use App\Models\Tutorial;
+use App\Models\Video;
 
-class SobreController extends Controller
+class VideoController extends Controller
 {
 
     public function index()
     {
-       return Sobre::all();
+       return Video::all();
     }
 }

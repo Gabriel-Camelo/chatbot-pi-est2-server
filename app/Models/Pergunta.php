@@ -2,17 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class Edital extends Model
+class Pergunta extends Model
 {
+
     use HasFactory;
-    protected $table = 'edital';
+    protected $table = 'pergunta';
     protected $fillable =
     [
         'id',
-        'arquivo',
-        'titulo'
+        'pergunta',
+        'resposta'
     ];
 }

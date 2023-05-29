@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class Edital extends Model
+class Video extends Model
 {
     use HasFactory;
-    protected $table = 'edital';
+    protected $table = 'video';
     protected $fillable =
     [
         'id',
-        'arquivo',
-        'titulo'
+        'link',
+        'titulo',
     ];
 }
